@@ -1,0 +1,17 @@
+#!/bin/tcsh
+
+set DIR=path-to-Harmony-directory/Harmony/bin/Source
+
+${DIR}/create_mesh/create_mesh ../hydro.input
+
+${DIR}/find_connect/find_connect 4
+
+foreach i (ensight_*)
+cd $i
+${DIR}/setup_mesh/setup_mesh
+cd ..
+end
+
+
+
+

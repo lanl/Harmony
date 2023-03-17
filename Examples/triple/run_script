@@ -1,0 +1,13 @@
+#!/bin/tcsh
+
+set DIR=path-to-Harmony-directory/Harmony/bin/Source
+
+if (! -e ./sgh_hydro_3d) then
+ln -s ${DIR}/sgh_hydro/sgh_hydro_3d ./
+endif
+
+mpirun -n 4 ./sgh_hydro_3d
+
+
+
+

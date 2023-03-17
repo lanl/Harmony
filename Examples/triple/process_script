@@ -1,0 +1,10 @@
+#!/bin/tcsh
+
+set DIR=path-to-Harmony-directory/Harmony/bin/Source
+
+${DIR}/make_ensight/make_ensight 20 4 0.25
+
+
+
+
+
